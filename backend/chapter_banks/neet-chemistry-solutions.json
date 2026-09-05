@@ -1,0 +1,20 @@
+{
+  "key": "neet-chemistry-solutions",
+  "exam": "NEET",
+  "subject": "chemistry",
+  "cls": "12",
+  "chapter_no": 1,
+  "chapter": "Solutions",
+  "source": "NEET",
+  "mode": "image",
+  "total_questions": 0,
+  "sections": [
+    { "topic": "Types of Solutions", "questions": [] },
+    { "topic": "Expressing Concentration of Solutions", "questions": [] },
+    { "topic": "Solubility", "questions": [] },
+    { "topic": "Vapour Pressure of Liquid Solutions", "questions": [] },
+    { "topic": "Ideal and Non-ideal Solutions", "questions": [] },
+    { "topic": "Colligative Properties and Determination of Molar Mass", "questions": [] },
+    { "topic": "Abnormal Molar Masses", "questions": [] }
+  ]
+}

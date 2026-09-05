@@ -1,0 +1,17 @@
+{
+  "key": "neet-math-basic-maths",
+  "exam": "NEET",
+  "subject": "math",
+  "cls": "11",
+  "chapter_no": 1,
+  "chapter": "Basic Maths",
+  "source": "NEET",
+  "mode": "image",
+  "total_questions": 0,
+  "sections": [
+    { "topic": "Inequalities", "questions": [] },
+    { "topic": "Logarithm", "questions": [] },
+    { "topic": "Divisibility Test", "questions": [] },
+    { "topic": "Ratio and Proportion", "questions": [] }
+  ]
+}

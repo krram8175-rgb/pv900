@@ -1,0 +1,21 @@
+{
+  "key": "neet-math-matrices",
+  "exam": "NEET",
+  "subject": "math",
+  "cls": "12",
+  "chapter_no": 1,
+  "chapter": "Matrices",
+  "source": "NEET",
+  "mode": "image",
+  "total_questions": 0,
+  "sections": [
+    { "topic": "Inverse of a Matrix", "questions": [] },
+    { "topic": "Rank of Matrix", "questions": [] },
+    { "topic": "Adjoint and its Properties", "questions": [] },
+    { "topic": "Product of Matrices", "questions": [] },
+    { "topic": "Basic Algebra of Matrices", "questions": [] },
+    { "topic": "Symmetric & Skew Symmetric Matrices", "questions": [] },
+    { "topic": "System of Linear Equations", "questions": [] },
+    { "topic": "Formation and Basic of Matrix", "questions": [] }
+  ]
+}

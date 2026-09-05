@@ -1,0 +1,16 @@
+{
+  "key": "neet-math-set-and-relation",
+  "exam": "NEET",
+  "subject": "math",
+  "cls": "11",
+  "chapter_no": 2,
+  "chapter": "Set and Relation",
+  "source": "NEET",
+  "mode": "image",
+  "total_questions": 0,
+  "sections": [
+    { "topic": "Questions on number of relations and sets", "questions": [] },
+    { "topic": "Questions on Symmetric Transitive and Reflexive Properties", "questions": [] },
+    { "topic": "Questions on Venn Diagram", "questions": [] }
+  ]
+}

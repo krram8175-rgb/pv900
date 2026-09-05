@@ -1,0 +1,19 @@
+{
+  "key": "neet-chemistry-some-basic-concepts-of-chemistry",
+  "exam": "NEET",
+  "subject": "chemistry",
+  "cls": "11",
+  "chapter_no": 1,
+  "chapter": "Some Basic Concepts of Chemistry",
+  "source": "NEET",
+  "mode": "image",
+  "total_questions": 0,
+  "sections": [
+    { "topic": "Properties of Matter and their Measurement", "questions": [] },
+    { "topic": "Laws of Chemical Combinations", "questions": [] },
+    { "topic": "Atomic and Molecular Masses", "questions": [] },
+    { "topic": "Mole Concept and Molar Masses", "questions": [] },
+    { "topic": "Percentage Composition", "questions": [] },
+    { "topic": "Stoichiometry and Stoichiometric Calculations", "questions": [] }
+  ]
+}
