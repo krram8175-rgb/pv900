@@ -30,7 +30,7 @@ def detect(im):
     runs = np.array([longest_run(paleblue[y]) for y in range(H)])
     solid = runs > 460
     header_top = None
-    y = int(H * 0.18)
+    y = int(H * 0.05)
     while y < H - 20:
         if solid[y] and int(solid[y:y + 40].sum()) >= 18:
             header_top = y

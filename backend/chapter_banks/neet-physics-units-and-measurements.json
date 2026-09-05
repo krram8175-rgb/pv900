@@ -22,7 +22,8 @@
             "c": "uam-fullpaper-q1-c.png",
             "d": "uam-fullpaper-q1-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q1-sol.png"
         },
         {
           "question_no": 2,
@@ -34,7 +35,8 @@
             "c": "uam-fullpaper-q2-c.png",
             "d": "uam-fullpaper-q2-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q2-sol.png"
         },
         {
           "question_no": 3,
@@ -46,7 +48,8 @@
             "c": "uam-fullpaper-q3-c.png",
             "d": "uam-fullpaper-q3-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q3-sol.png"
         },
         {
           "question_no": 4,
@@ -58,7 +61,8 @@
             "c": "uam-fullpaper-q4-c.png",
             "d": "uam-fullpaper-q4-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q4-sol.png"
         },
         {
           "question_no": 5,
@@ -70,7 +74,8 @@
             "c": "uam-fullpaper-q5-c.png",
             "d": "uam-fullpaper-q5-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q5-sol.png"
         },
         {
           "question_no": 6,
@@ -82,7 +87,8 @@
             "c": "uam-fullpaper-q6-c.png",
             "d": "uam-fullpaper-q6-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q6-sol.png"
         },
         {
           "question_no": 7,
@@ -94,7 +100,8 @@
             "c": "uam-fullpaper-q7-c.png",
             "d": "uam-fullpaper-q7-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q7-sol.png"
         },
         {
           "question_no": 8,
@@ -106,7 +113,8 @@
             "c": "uam-fullpaper-q8-c.png",
             "d": "uam-fullpaper-q8-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q8-sol.png"
         },
         {
           "question_no": 9,
@@ -118,7 +126,8 @@
             "c": "uam-fullpaper-q9-c.png",
             "d": "uam-fullpaper-q9-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q9-sol.png"
         },
         {
           "question_no": 10,
@@ -130,7 +139,8 @@
             "c": "uam-fullpaper-q10-c.png",
             "d": "uam-fullpaper-q10-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q10-sol.png"
         },
         {
           "question_no": 11,
@@ -142,7 +152,8 @@
             "c": "uam-fullpaper-q11-c.png",
             "d": "uam-fullpaper-q11-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q11-sol.png"
         },
         {
           "question_no": 12,
@@ -154,7 +165,8 @@
             "c": "uam-fullpaper-q12-c.png",
             "d": "uam-fullpaper-q12-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q12-sol.png"
         },
         {
           "question_no": 13,
@@ -166,7 +178,8 @@
             "c": "uam-fullpaper-q13-c.png",
             "d": "uam-fullpaper-q13-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q13-sol.png"
         },
         {
           "question_no": 14,
@@ -178,7 +191,8 @@
             "c": "uam-fullpaper-q14-c.png",
             "d": "uam-fullpaper-q14-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q14-sol.png"
         },
         {
           "question_no": 15,
@@ -190,7 +204,8 @@
             "c": "uam-fullpaper-q15-c.png",
             "d": "uam-fullpaper-q15-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q15-sol.png"
         },
         {
           "question_no": 16,
@@ -202,7 +217,8 @@
             "c": "uam-fullpaper-q16-c.png",
             "d": "uam-fullpaper-q16-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q16-sol.png"
         },
         {
           "question_no": 17,
@@ -214,7 +230,8 @@
             "c": "uam-fullpaper-q17-c.png",
             "d": "uam-fullpaper-q17-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q17-sol.png"
         },
         {
           "question_no": 18,
@@ -226,7 +243,8 @@
             "c": "uam-fullpaper-q18-c.png",
             "d": "uam-fullpaper-q18-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q18-sol.png"
         },
         {
           "question_no": 19,
@@ -238,7 +256,8 @@
             "c": "uam-fullpaper-q19-c.png",
             "d": "uam-fullpaper-q19-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q19-sol.png"
         },
         {
           "question_no": 20,
@@ -250,7 +269,8 @@
             "c": "uam-fullpaper-q20-c.png",
             "d": "uam-fullpaper-q20-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q20-sol.png"
         },
         {
           "question_no": 21,
@@ -262,7 +282,8 @@
             "c": "uam-fullpaper-q21-c.png",
             "d": "uam-fullpaper-q21-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q21-sol.png"
         },
         {
           "question_no": 22,
@@ -274,7 +295,8 @@
             "c": "uam-fullpaper-q22-c.png",
             "d": "uam-fullpaper-q22-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q22-sol.png"
         },
         {
           "question_no": 23,
@@ -286,7 +308,8 @@
             "c": "uam-fullpaper-q23-c.png",
             "d": "uam-fullpaper-q23-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q23-sol.png"
         },
         {
           "question_no": 24,
@@ -298,7 +321,8 @@
             "c": "uam-fullpaper-q24-c.png",
             "d": "uam-fullpaper-q24-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q24-sol.png"
         },
         {
           "question_no": 25,
@@ -310,7 +334,8 @@
             "c": "uam-fullpaper-q25-c.png",
             "d": "uam-fullpaper-q25-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q25-sol.png"
         },
         {
           "question_no": 26,
@@ -322,7 +347,8 @@
             "c": "uam-fullpaper-q26-c.png",
             "d": "uam-fullpaper-q26-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q26-sol.png"
         },
         {
           "question_no": 27,
@@ -334,7 +360,8 @@
             "c": "uam-fullpaper-q27-c.png",
             "d": "uam-fullpaper-q27-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q27-sol.png"
         },
         {
           "question_no": 28,
@@ -346,7 +373,8 @@
             "c": "uam-fullpaper-q28-c.png",
             "d": "uam-fullpaper-q28-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q28-sol.png"
         },
         {
           "question_no": 29,
@@ -358,7 +386,8 @@
             "c": "uam-fullpaper-q29-c.png",
             "d": "uam-fullpaper-q29-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q29-sol.png"
         },
         {
           "question_no": 30,
@@ -370,7 +399,8 @@
             "c": "uam-fullpaper-q30-c.png",
             "d": "uam-fullpaper-q30-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q30-sol.png"
         },
         {
           "question_no": 31,
@@ -382,7 +412,8 @@
             "c": "uam-fullpaper-q31-c.png",
             "d": "uam-fullpaper-q31-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q31-sol.png"
         },
         {
           "question_no": 32,
@@ -394,7 +425,8 @@
             "c": "uam-fullpaper-q32-c.png",
             "d": "uam-fullpaper-q32-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q32-sol.png"
         },
         {
           "question_no": 33,
@@ -406,7 +438,8 @@
             "c": "uam-fullpaper-q33-c.png",
             "d": "uam-fullpaper-q33-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q33-sol.png"
         },
         {
           "question_no": 34,
@@ -418,7 +451,8 @@
             "c": "uam-fullpaper-q34-c.png",
             "d": "uam-fullpaper-q34-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q34-sol.png"
         },
         {
           "question_no": 35,
@@ -430,7 +464,8 @@
             "c": "uam-fullpaper-q35-c.png",
             "d": "uam-fullpaper-q35-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q35-sol.png"
         },
         {
           "question_no": 36,
@@ -442,7 +477,8 @@
             "c": "uam-fullpaper-q36-c.png",
             "d": "uam-fullpaper-q36-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q36-sol.png"
         },
         {
           "question_no": 37,
@@ -454,7 +490,8 @@
             "c": "uam-fullpaper-q37-c.png",
             "d": "uam-fullpaper-q37-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q37-sol.png"
         },
         {
           "question_no": 38,
@@ -466,7 +503,8 @@
             "c": "uam-fullpaper-q38-c.png",
             "d": "uam-fullpaper-q38-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q38-sol.png"
         },
         {
           "question_no": 39,
@@ -478,7 +516,8 @@
             "c": "uam-fullpaper-q39-c.png",
             "d": "uam-fullpaper-q39-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q39-sol.png"
         },
         {
           "question_no": 40,
@@ -490,7 +529,8 @@
             "c": "uam-fullpaper-q40-c.png",
             "d": "uam-fullpaper-q40-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q40-sol.png"
         },
         {
           "question_no": 41,
@@ -502,7 +542,8 @@
             "c": "uam-fullpaper-q41-c.png",
             "d": "uam-fullpaper-q41-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q41-sol.png"
         },
         {
           "question_no": 42,
@@ -514,7 +555,8 @@
             "c": "uam-fullpaper-q42-c.png",
             "d": "uam-fullpaper-q42-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q42-sol.png"
         },
         {
           "question_no": 43,
@@ -526,7 +568,8 @@
             "c": "uam-fullpaper-q43-c.png",
             "d": "uam-fullpaper-q43-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q43-sol.png"
         },
         {
           "question_no": 44,
@@ -538,7 +581,8 @@
             "c": "uam-fullpaper-q44-c.png",
             "d": "uam-fullpaper-q44-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q44-sol.png"
         },
         {
           "question_no": 45,
@@ -550,7 +594,8 @@
             "c": "uam-fullpaper-q45-c.png",
             "d": "uam-fullpaper-q45-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q45-sol.png"
         },
         {
           "question_no": 46,
@@ -562,7 +607,8 @@
             "c": "uam-fullpaper-q46-c.png",
             "d": "uam-fullpaper-q46-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q46-sol.png"
         },
         {
           "question_no": 47,
@@ -574,7 +620,8 @@
             "c": "uam-fullpaper-q47-c.png",
             "d": "uam-fullpaper-q47-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q47-sol.png"
         },
         {
           "question_no": 48,
@@ -586,7 +633,8 @@
             "c": "uam-fullpaper-q48-c.png",
             "d": "uam-fullpaper-q48-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q48-sol.png"
         },
         {
           "question_no": 49,
@@ -598,7 +646,8 @@
             "c": "uam-fullpaper-q49-c.png",
             "d": "uam-fullpaper-q49-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q49-sol.png"
         },
         {
           "question_no": 50,
@@ -610,7 +659,8 @@
             "c": "uam-fullpaper-q50-c.png",
             "d": "uam-fullpaper-q50-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q50-sol.png"
         },
         {
           "question_no": 51,
@@ -622,7 +672,8 @@
             "c": "uam-fullpaper-q51-c.png",
             "d": "uam-fullpaper-q51-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q51-sol.png"
         },
         {
           "question_no": 52,
@@ -634,7 +685,8 @@
             "c": "uam-fullpaper-q52-c.png",
             "d": "uam-fullpaper-q52-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q52-sol.png"
         },
         {
           "question_no": 53,
@@ -646,7 +698,8 @@
             "c": "uam-fullpaper-q53-c.png",
             "d": "uam-fullpaper-q53-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q53-sol.png"
         },
         {
           "question_no": 54,
@@ -658,7 +711,8 @@
             "c": "uam-fullpaper-q54-c.png",
             "d": "uam-fullpaper-q54-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q54-sol.png"
         },
         {
           "question_no": 55,
@@ -670,7 +724,8 @@
             "c": "uam-fullpaper-q55-c.png",
             "d": "uam-fullpaper-q55-d.png"
           },
-          "header_in_image": false
+          "header_in_image": false,
+          "solution_image": "uam-fullpaper-q55-sol.png"
         }
       ]
     },
