@@ -225,10 +225,10 @@ export default function ChapterPractice() {
                               onClick={() => setRevealed((r) => ({ ...r, [q.question_no]: true }))}
                               className="flex items-center gap-1.5 rounded-lg bg-slate-800 px-3.5 py-2 text-xs font-bold text-white transition-all hover:bg-slate-900"
                             >
-                              <Eye className="h-3.5 w-3.5" /> Show Answer & Solution
+                              <Eye className="h-3.5 w-3.5" /> {q.answer ? "Show Answer & Solution" : "Show Explanation"}
                             </button>
                           </div>
-                        ) : (
+                        ) : q.answer ? (
                           <div className="mt-4 rounded-xl border border-emerald-100 bg-emerald-50/50 p-4">
                             <p className="mb-2 flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-emerald-700">
                               <CheckCircle2 className="h-3.5 w-3.5" /> Answer · {q.answer?.toUpperCase()}
@@ -254,7 +254,21 @@ export default function ChapterPractice() {
                               </button>
                             ) : null}
                           </div>
-                        ))}
+                        ) : q.solution_image ? (
+                          <button
+                            type="button"
+                            onClick={() => setZoom({ src: chapterImageUrl(q.solution_image), alt: `Explanation ${q.question_no}` })}
+                            className="mt-4 block w-full overflow-hidden rounded-xl border border-slate-100 bg-white text-left"
+                            title="Tap to zoom"
+                          >
+                            <img
+                              src={chapterImageUrl(q.solution_image)}
+                              alt={`Explanation ${q.question_no}`}
+                              className="mx-auto block h-auto w-full max-w-full"
+                              loading="lazy"
+                            />
+                          </button>
+                        ) : null)}
                       </div>
                     );
                   }
