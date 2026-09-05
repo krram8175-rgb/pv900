@@ -16,6 +16,16 @@ export default function FullPaperSolutions() {
   const [revealed, setRevealed] = useState({});
   const [picks, setPicks] = useState({});
   const [zoom, setZoom] = useState(null);
+  const [jump, setJump] = useState("");
+
+  const goTo = (n) => {
+    const num = parseInt(n, 10);
+    if (!num || Number.isNaN(num)) return;
+    const target = Math.min(Math.max(num, 1), total) - 1;
+    setIdx(target);
+    setJump("");
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     getFullPaper(paperId)
@@ -70,6 +80,28 @@ export default function FullPaperSolutions() {
               {s}
             </button>
           ))}
+
+          <form
+            onSubmit={(e) => { e.preventDefault(); goTo(jump); }}
+            className="ml-auto flex items-center gap-1.5"
+          >
+            <label className="text-xs font-bold text-slate-500">Go to</label>
+            <input
+              type="number"
+              min={1}
+              max={total}
+              value={jump}
+              onChange={(e) => setJump(e.target.value)}
+              placeholder={`1-${total}`}
+              className="w-16 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-center text-xs font-bold text-slate-700 outline-none focus:border-[#5B50E6] focus:ring-2 focus:ring-[#5B50E6]/20"
+            />
+            <button
+              type="submit"
+              className="rounded-lg bg-[#5B50E6] px-3 py-1.5 text-xs font-bold text-white transition-all hover:bg-[#4a41c9]"
+            >
+              Go
+            </button>
+          </form>
         </div>
 
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
