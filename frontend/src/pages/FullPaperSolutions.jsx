@@ -118,13 +118,13 @@ export default function FullPaperSolutions() {
             <div className="mt-4">
               <button onClick={() => setRevealed((r) => ({ ...r, [q.question_no]: true }))}
                 className="flex items-center gap-1.5 rounded-lg bg-slate-800 px-3.5 py-2 text-xs font-bold text-white transition-all hover:bg-slate-900">
-                <Eye className="h-3.5 w-3.5" /> Show Answer & Solution
+                <Eye className="h-3.5 w-3.5" /> {q.answer ? "Show Answer & Solution" : "Show Explanation"}
               </button>
             </div>
           ) : (
             <div className="mt-4 rounded-xl border border-emerald-100 bg-emerald-50/50 p-4">
               <p className="mb-2 flex items-center gap-2 text-xs font-extrabold uppercase tracking-wide text-emerald-700">
-                <CheckCircle2 className="h-3.5 w-3.5" /> Answer · {answerLabel}
+                <CheckCircle2 className="h-3.5 w-3.5" /> {q.answer ? `Answer · ${answerLabel}` : "Explanation"}
                 {q.solution_image && (
                   <button type="button" onClick={() => zoomImg(q.solution_image, `Solution ${q.question_no}`)}
                     className="ml-auto flex items-center gap-1 rounded-md border border-emerald-200 bg-white px-2 py-1 text-[11px] font-bold normal-case text-emerald-700 transition-all hover:border-emerald-400" title="Zoom solution">
