@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getChapterBank, chapterImageUrl } from "@/lib/api";
 import { Header } from "@/components/Header";
-import { Atom, Loader2, CheckCircle2, Eye, ChevronRight, ChevronLeft, Layers, FileText } from "lucide-react";
+import { Atom, Loader2, CheckCircle2, Eye, ChevronRight, ChevronLeft, Layers, FileText, Eraser } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
 import ImageZoomModal from "@/components/ImageZoomModal";
 
 const LETTERS = ["a", "b", "c", "d"];
@@ -16,6 +17,7 @@ export default function ChapterPractice() {
   const [revealed, setRevealed] = useState({}); // { qno: true }
   const [openTopic, setOpenTopic] = useState(null); // null = show topic list
   const [curIdx, setCurIdx] = useState(0);      // index within the open topic
+  const [showAll, setShowAll] = useState(false); // Show Answer toggle -> reveal all answers
   const [activeTag, setActiveTag] = useState("All"); // similarity-tag filter
   const [zoom, setZoom] = useState(null);       // { src, alt } or null
 
@@ -162,7 +164,7 @@ export default function ChapterPractice() {
               <div className="space-y-4">
                 {[working[idx]].filter(Boolean).map((q) => {
                   const pick = picks[q.question_no];
-                  const show = revealed[q.question_no];
+                  const show = revealed[q.question_no] || showAll;
 
                   // ---- Image-mode question (pixel-perfect from source PDF) ----
                   if (q.question_image) {
@@ -261,22 +263,46 @@ export default function ChapterPractice() {
                 })}
               </div>
 
-              <div className="mt-5 flex items-center justify-between">
-                <button
-                  disabled={idx === 0}
-                  onClick={() => { setCurIdx(idx - 1); window.scrollTo(0, 0); }}
-                  className="flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-600 transition-all hover:bg-slate-50 disabled:opacity-40"
-                >
-                  <ChevronLeft className="h-4 w-4" /> Previous
-                </button>
-                <span className="text-xs font-bold text-slate-400">{idx + 1} / {total}</span>
-                <button
-                  disabled={idx >= total - 1}
-                  onClick={() => { setCurIdx(idx + 1); window.scrollTo(0, 0); }}
-                  className="flex items-center gap-1 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white transition-all hover:bg-blue-700 disabled:opacity-40"
-                >
-                  Next <ChevronRight className="h-4 w-4" />
-                </button>
+              <div className="mt-5 space-y-3">
+                {/* Show Answer toggle -> reveals all answers when ON */}
+                <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+                  <Switch id="show-all-answers" checked={showAll} onCheckedChange={setShowAll} />
+                  <label htmlFor="show-all-answers" className="cursor-pointer text-sm font-bold text-slate-700">Show Answer</label>
+                  <span className="ml-auto text-[11px] font-semibold text-slate-400">
+                    {showAll ? "All answers visible" : "Turn on to reveal every answer"}
+                  </span>
+                </div>
+
+                {/* Controls: Clear Response + Previous / Next */}
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => {
+                      const qno = working[idx]?.question_no;
+                      setPicks((p) => { const n = { ...p }; delete n[qno]; return n; });
+                    }}
+                    className="flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-slate-600 transition-all hover:bg-slate-50"
+                  >
+                    <Eraser className="h-4 w-4" /> Clear Response
+                  </button>
+
+                  <div className="ml-auto flex items-center gap-2">
+                    <button
+                      disabled={idx === 0}
+                      onClick={() => { setCurIdx(idx - 1); window.scrollTo(0, 0); }}
+                      className="flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-600 transition-all hover:bg-slate-50 disabled:opacity-40"
+                    >
+                      <ChevronLeft className="h-4 w-4" /> Previous
+                    </button>
+                    <span className="text-xs font-bold text-slate-400">{idx + 1} / {total}</span>
+                    <button
+                      disabled={idx >= total - 1}
+                      onClick={() => { setCurIdx(idx + 1); window.scrollTo(0, 0); }}
+                      className="flex items-center gap-1 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white transition-all hover:bg-blue-700 disabled:opacity-40"
+                    >
+                      Next <ChevronRight className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
               </div>
             </section>
             );
