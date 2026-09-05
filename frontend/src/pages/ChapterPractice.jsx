@@ -161,7 +161,7 @@ export default function ChapterPractice() {
                 </div>
               )}
 
-              <div className="space-y-4">
+              <div className="space-y-4 pb-48">
                 {[working[idx]].filter(Boolean).map((q) => {
                   const pick = picks[q.question_no];
                   const show = revealed[q.question_no] || showAll;
@@ -263,9 +263,10 @@ export default function ChapterPractice() {
                 })}
               </div>
 
-              <div className="mt-5 space-y-3">
+              <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-[0_-2px_12px_rgba(0,0,0,0.06)] backdrop-blur">
+                <div className="mx-auto max-w-3xl space-y-2.5">
                 {/* Show Answer toggle -> reveals all answers when ON */}
-                <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm">
+                <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-2.5 shadow-sm">
                   <Switch id="show-all-answers" checked={showAll} onCheckedChange={setShowAll} />
                   <label htmlFor="show-all-answers" className="cursor-pointer text-sm font-bold text-slate-700">Show Answer</label>
                   <span className="ml-auto text-[11px] font-semibold text-slate-400">
@@ -302,6 +303,7 @@ export default function ChapterPractice() {
                       Next <ChevronRight className="h-4 w-4" />
                     </button>
                   </div>
+                </div>
                 </div>
               </div>
             </section>
