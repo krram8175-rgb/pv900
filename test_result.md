@@ -141,6 +141,18 @@ backend:
         agent: "main"
         comment: "Deleted 1436 unreferenced/orphan images from chapter_images (old reexam2026_* RE-NEET set + stray motion_* files). Need to verify existing chapter banks still load and all their images serve, especially neet-physics-units-and-measurements and neet-physics-motion-in-a-straight-line. Verify GET /api/chapter-bank/{key} returns correct question counts (U&M total 64, Motion total 63) and that GET /api/chapter-image/{filename} returns HTTP 200 for a sample of referenced question/option/solution images from both banks. Also verify full papers GET /api/full-paper/reexam-2026 and /api/full-paper/kcet-2026 (180 each) still load with their rn2026_*/kcet2026_* images serving."
 
+  - task: "Units & Measurements Q5 and Q8 image/data fix verification"
+    implemented: true
+    working: true
+    file: "/app/backend/chapter_banks/neet-physics-units-and-measurements.json"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "Comprehensive verification completed for Units & Measurements chapter bank Q5 and Q8 image fix. ALL TESTS PASSED (4/4): (1) Chapter bank structure verified - GET /api/chapter-bank/neet-physics-units-and-measurements returns HTTP 200, total_questions=55, sections[0] contains 55 questions. (2) Question 5 verified - question_image='uam-fullpaper-q5.png', solution_image='uam-fullpaper-q5-sol-v2.png', option_images={a: uam-fullpaper-q5-a.png, b: uam-fullpaper-q5-b.png, c: uam-fullpaper-q5-c.png, d: uam-fullpaper-q5-d.png}. (3) Question 8 verified - question_image='uam-fullpaper-q8.png', solution_image='uam-fullpaper-q8-sol-v2.png', option_images correctly reuse Q5's clean option images {a: uam-fullpaper-q5-a.png, b: uam-fullpaper-q5-b.png, c: uam-fullpaper-q5-c.png, d: uam-fullpaper-q5-d.png}. (4) All 7 image files serve correctly via GET /api/chapter-image/<filename> with HTTP 200 and Content-Type image/png: uam-fullpaper-q5-sol-v2.png (106KB), uam-fullpaper-q8-sol-v2.png (106KB), uam-fullpaper-q5-a.png (9KB), uam-fullpaper-q5-b.png (9KB), uam-fullpaper-q5-c.png (9KB), uam-fullpaper-q5-d.png (8KB), uam-fullpaper-q8.png (164KB). Data fix successfully implemented and verified."
+
   - task: "Subject detail endpoint"
     implemented: true
     working: true
@@ -367,7 +379,7 @@ frontend:
 metadata:
   created_by: "testing_agent"
   version: "1.0"
-  test_sequence: 2
+  test_sequence: 3
   run_ui: true
 
 test_plan:
@@ -377,6 +389,8 @@ test_plan:
   test_priority: "high_first"
 
 agent_communication:
+  - agent: "main"
+    message: "Fixed Units & Measurements (neet-physics-units-and-measurements) chapter bank, section 0. (1) Q5 explanation replaced with fresh vernier least-count crop -> solution_image now 'uam-fullpaper-q5-sol-v2.png'. (2) Q8 options changed to reuse the clean original vernier option crops 'uam-fullpaper-q5-a/b/c/d.png' (question_image kept as balloon 'uam-fullpaper-q8.png', solution_image 'uam-fullpaper-q8-sol-v2.png'). Please verify via GET /api/chapter-bank/neet-physics-units-and-measurements that Q5 and Q8 reference these filenames, and that GET /api/chapter-image/<filename> returns HTTP 200 image/png for: uam-fullpaper-q5-sol-v2.png, uam-fullpaper-q8-sol-v2.png, uam-fullpaper-q5-a.png, uam-fullpaper-q5-b.png, uam-fullpaper-q5-c.png, uam-fullpaper-q5-d.png. Also confirm total_questions=55 and section 0 has 55 questions."
   - agent: "testing"
     message: "Completed comprehensive backend testing. All 17 core endpoints tested and working correctly. Only minor data content issue found (units-and-measurements chapter bank has 5 questions instead of expected 42, but endpoint functionality is correct). CRUD operations verified. Quiz submission and scoring working. Chapter images serving correctly. MongoDB integration working. All tests passed except for one minor data content issue."
   - agent: "testing"
@@ -385,3 +399,5 @@ agent_communication:
     message: "Back-button navigation bug fix testing completed successfully. Tested three comprehensive scenarios: (1) Main bug - Chapter Practice back flow from /exam/neet/physics/practice/neet-physics-units-and-measurements correctly navigates to class picker at /exam/neet/physics/chapters with visible content, NO blank screen. (2) Full drill-down navigation tested step-by-step: Home→NEET→Physics→Class 11→Practice, then back at each level, all pages render correctly, NO blank screens. (3) Full Paper solutions back flow from /exam/neet/paper/reexam-2026/solutions to /exam/neet/papers works correctly, NO blank screen. The bug fix in Header.jsx (line 15) is working as expected. All navigation flows verified with screenshots showing proper page rendering."
   - agent: "testing"
     message: "Full Paper button feature testing completed successfully. VERIFIED IMPLEMENTATION: (1) Chapter practice screen has dedicated purple 'Full Paper' button (data-testid='chapter-full-paper-btn') positioned above topic list, displays only for NEET/KCET when in topic list view. (2) Exam dashboard has 'Full Paper' button (data-testid='exam-full-paper-top') at the TOP, above Exam Info and Analytics (Y:92 vs Y:156). (3) Both buttons navigate correctly to /exam/neet/papers. (4) Papers page displays 37 paper cards with year filters. (5) Complete user flow tested end-to-end: Homepage→NEET→Dashboard (button visible)→Physics→Class 11→Units and Measurements→Chapter practice (button visible above topics)→Papers page. All navigation working. Button styling correct: purple bg-[#5B50E6], proper icons, hover effects. Tested successfully on both 'Motion in a Straight Line' and 'Units and Measurements' chapters. Feature fully functional."
+  - agent: "testing"
+    message: "Units & Measurements Q5 and Q8 image/data fix verification COMPLETED - ALL TESTS PASSED (4/4). Verified: (1) Chapter bank structure correct - total_questions=55, sections[0] has 55 questions. (2) Q5 images correct - question_image='uam-fullpaper-q5.png', solution_image='uam-fullpaper-q5-sol-v2.png', option_images={a/b/c/d: uam-fullpaper-q5-a/b/c/d.png}. (3) Q8 images correct - question_image='uam-fullpaper-q8.png', solution_image='uam-fullpaper-q8-sol-v2.png', option_images correctly reuse Q5's clean options. (4) All 7 image files serve correctly via /api/chapter-image/<filename> with HTTP 200 and proper Content-Type. Data fix successfully implemented. No issues found. Ready for main agent to summarize and finish."

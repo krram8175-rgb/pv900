@@ -75,7 +75,7 @@
             "d": "uam-fullpaper-q5-d.png"
           },
           "header_in_image": false,
-          "solution_image": "uam-fullpaper-q5-sol.png"
+          "solution_image": "uam-fullpaper-q5-sol-v2.png"
         },
         {
           "question_no": 6,
@@ -108,10 +108,10 @@
           "year": "NEET 2026",
           "question_image": "uam-fullpaper-q8.png",
           "option_images": {
-            "a": "uam-fullpaper-q8-a-v2.png",
-            "b": "uam-fullpaper-q8-b-v2.png",
-            "c": "uam-fullpaper-q8-c-v2.png",
-            "d": "uam-fullpaper-q8-d-v2.png"
+            "a": "uam-fullpaper-q5-a.png",
+            "b": "uam-fullpaper-q5-b.png",
+            "c": "uam-fullpaper-q5-c.png",
+            "d": "uam-fullpaper-q5-d.png"
           },
           "header_in_image": false,
           "solution_image": "uam-fullpaper-q8-sol-v2.png"
