@@ -7,7 +7,7 @@
   "chapter": "Units and Measurements",
   "source": "NEET",
   "mode": "image",
-  "total_questions": 64,
+  "total_questions": 55,
   "sections": [
     {
       "topic": "Full Paper — NEET 2026",
@@ -726,128 +726,6 @@
           },
           "header_in_image": false,
           "solution_image": "uam-fullpaper-q55-sol.png"
-        }
-      ]
-    },
-    {
-      "topic": "Unit",
-      "questions": [
-        {
-          "question_no": 1,
-          "year": "NEET 2026",
-          "answer": "d",
-          "question_image": "um_q1_question.png",
-          "option_images": {
-            "a": "um_q1_opt_a.png",
-            "b": "um_q1_opt_b.png",
-            "c": "um_q1_opt_c.png",
-            "d": "um_q1_opt_d.png"
-          },
-          "solution_image": "um_q1_solution.png"
-        },
-        {
-          "question_no": 2,
-          "year": "NEET 2020",
-          "answer": "b",
-          "question_image": "um_q2_question.png",
-          "option_images": {
-            "a": "um_q2_opt_a.png",
-            "b": "um_q2_opt_b.png",
-            "c": "um_q2_opt_c.png",
-            "d": "um_q2_opt_d.png"
-          },
-          "solution_image": "um_q2_solution.png"
-        },
-        {
-          "question_no": 3,
-          "year": "NEET 2012",
-          "answer": "c",
-          "question_image": "um_q3_question.png",
-          "option_images": {
-            "a": "um_q3_opt_a.png",
-            "b": "um_q3_opt_b.png",
-            "c": "um_q3_opt_c.png",
-            "d": "um_q3_opt_d.png"
-          },
-          "solution_image": "um_q3_solution.png"
-        },
-        {
-          "question_no": 4,
-          "year": "NEET 2011",
-          "answer": "c",
-          "question_image": "um_q4_question.png",
-          "option_images": {
-            "a": "um_q4_opt_a.png",
-            "b": "um_q4_opt_b.png",
-            "c": "um_q4_opt_c.png",
-            "d": "um_q4_opt_d.png"
-          },
-          "solution_image": "um_q4_solution.png"
-        },
-        {
-          "question_no": 5,
-          "year": "NEET 2004",
-          "answer": "c",
-          "question_image": "um_q5_question.png",
-          "option_images": {
-            "a": "um_q5_opt_a.png",
-            "b": "um_q5_opt_b.png",
-            "c": "um_q5_opt_c.png",
-            "d": "um_q5_opt_d.png"
-          },
-          "solution_image": "um_q5_solution.png"
-        },
-        {
-          "question_no": 6,
-          "answer": "d",
-          "header_in_image": true,
-          "question_image": "sf_q1_question.png",
-          "option_images": {
-            "a": "sf_q1_opt_a.png",
-            "b": "sf_q1_opt_b.png",
-            "c": "sf_q1_opt_c.png",
-            "d": "sf_q1_opt_d.png"
-          },
-          "solution_image": "sf_q1_solution.png"
-        },
-        {
-          "question_no": 7,
-          "answer": "c",
-          "header_in_image": true,
-          "question_image": "sf_q2_question.png",
-          "option_images": {
-            "a": "sf_q2_opt_a.png",
-            "b": "sf_q2_opt_b.png",
-            "c": "sf_q2_opt_c.png",
-            "d": "sf_q2_opt_d.png"
-          },
-          "solution_image": "sf_q2_solution.png"
-        },
-        {
-          "question_no": 8,
-          "answer": "d",
-          "header_in_image": true,
-          "question_image": "sf_q3_question.png",
-          "option_images": {
-            "a": "sf_q3_opt_a.png",
-            "b": "sf_q3_opt_b.png",
-            "c": "sf_q3_opt_c.png",
-            "d": "sf_q3_opt_d.png"
-          },
-          "solution_image": "sf_q3_solution.png"
-        },
-        {
-          "question_no": 9,
-          "answer": "a",
-          "header_in_image": true,
-          "question_image": "sf_q4_question.png",
-          "option_images": {
-            "a": "sf_q4_opt_a.png",
-            "b": "sf_q4_opt_b.png",
-            "c": "sf_q4_opt_c.png",
-            "d": "sf_q4_opt_d.png"
-          },
-          "solution_image": "sf_q4_solution.png"
         }
       ]
     },
